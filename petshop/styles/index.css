@@ -1,0 +1,59 @@
+.header-info {
+  position: absolute;
+  width: 1024px;
+  height: 20px;
+  left: calc(50% - 1024px / 2);
+  top: 0px;
+  background: #222222;
+  color: white;
+}
+.header-nav {
+  position: absolute;
+  width: 1024px;
+  height: 62px;
+  left: calc(50% - 1024px / 2);
+  top: 20px;
+  background: #f0a83e;
+}
+.logo {
+  position: absolute;
+  width: 166.38px;
+  height: 23px;
+  left: 40px;
+  top: 39px;
+}
+.img-bowl {
+  width: 1025px;
+  height: 409px;
+  position: absolute;
+  left: calc(50% - 1025px / 2 + 0.5px);
+  top: 81px;
+}
+.img-pawprint {
+  position: absolute;
+  width: 67px;
+  height: 71px;
+  left: calc(50% - 67px / 2 + 0.5px);
+  top: 510px;
+}
+.title-principal {
+  position: absolute;
+  width: 406px;
+  height: 47px;
+  left: 309px;
+  top: 586px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+.links {
+  position: absolute;
+  width: 267px;
+  height: 18px;
+  left: 380px;
+  top: 653px;
+  list-style-type: none;
+}
