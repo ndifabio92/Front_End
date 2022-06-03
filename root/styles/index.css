@@ -31,6 +31,10 @@ ul > ul > li {
   margin-left: 38px;
 }
 
+p {
+  padding-left: 15px;
+}
+
 /* HEADER */
 .banner {
   position: absolute;
