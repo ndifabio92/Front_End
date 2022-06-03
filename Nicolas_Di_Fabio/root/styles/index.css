@@ -1,0 +1,155 @@
+header {
+  position: absolute;
+  width: 1440px;
+  height: 188.19px;
+  left: 0px;
+  top: 0px;
+  /* background: #e6e6e6; */
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  width: 1440px;
+  height: 40px;
+  left: 0px;
+  top: 987px;
+  background: #005677;
+}
+
+li > span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+ul > span {
+  font-weight: bold;
+}
+
+ul > ul > li {
+  list-style-type: none;
+  margin-left: 38px;
+}
+
+/* HEADER */
+.banner {
+  position: absolute;
+  width: 1440px;
+  height: 188.19px;
+  left: 0px;
+  top: 0px;
+  background-image: url("../img/banner.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.img-background {
+  position: absolute;
+  width: auto;
+  height: 75%;
+  left: 670px;
+  top: 20.91px;
+  border-radius: 50%;
+}
+
+.title-background {
+  position: absolute;
+  width: 1440px;
+  height: 60px;
+  left: 0px;
+  top: 188px;
+  background: #c4c4c4;
+}
+
+.title {
+  text-align: center;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 84.69%;
+  /* identical to box height, or 30px */
+
+  font-feature-settings: "cpsp" on;
+  color: #005677;
+}
+
+/* DATOS-PERSONALES */
+.datos-personales {
+  position: absolute;
+  width: 1440px;
+  height: 30px;
+  left: 0px;
+  top: 376px;
+}
+
+/* FORMACION-ACADEMICA */
+.formacion-academica {
+  position: absolute;
+  width: 1440px;
+  height: 30px;
+  left: 0px;
+  top: 518px;
+}
+
+/* EXPERIENCIA-LABORAL */
+.experiencia-laboral {
+  position: absolute;
+  width: 1440px;
+  height: 30px;
+  left: 0px;
+  top: 673px;
+}
+
+/* FOOTER */
+
+.footer-group {
+  margin-top: 9px;
+}
+
+.footer-text {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 84.69%;
+  color: #ffffff;
+}
+
+.icon-instagram {
+  width: 15px;
+  height: 15px;
+  margin-left: 26px;
+}
+.icon-linkedin {
+  width: 15px;
+  height: 15px;
+  margin-left: 26px;
+}
+.icon-github {
+  width: 15px;
+  height: 15px;
+  margin-left: 26px;
+}
+
+/* STYLES-GENERALES */
+.subtitle-background {
+  background: #c4c4c4;
+}
+
+.subtitle {
+  width: 395.62px;
+  height: 17px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 84.69%;
+  font-feature-settings: "cpsp" on;
+  color: #005677;
+}
+
+.subtitle-center {
+  margin-left: 15px;
+  margin-top: 7px;
+}
