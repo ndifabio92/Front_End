@@ -1,169 +1,121 @@
-footer {
-  position: absolute;
-  width: 100%;
-  height: 51px;
-  left: 0px;
-  top: 972px;
-  background: #00669f;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 16px;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 header {
-  padding: 28px;
-  box-sizing: border-box;
-  position: absolute;
-  width: 100%;
-  height: 101px;
-  left: 0px;
-  top: 38px;
+  /* padding-bottom: 292px; */
+  margin-bottom: 10%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  /* padding-bottom: 200px; */
+  margin-bottom: 10%;
+  padding-left: 15px;
+}
+
+h2 {
+  padding-top: 60px;
+  text-align: center;
+}
+
+p {
+  margin: 15px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
   background: #00669f;
-  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  padding: 15px 37px;
+  color: white;
+  border: none;
 }
 
-.descuentos {
-  padding: 10px;
-  position: absolute;
-  width: 100%;
+.header-top {
+  background-color: #1cd1b0;
   height: 38px;
-  left: 0px;
-  top: 0px;
-  background: #1cd1b0;
-  box-sizing: border-box;
+  padding: 10px;
+  color: black;
+  font-style: normal;
 }
 
-.header-text {
-  font-family: "Roboto";
+.header-bot {
+  background-color: #00669f;
+  height: 101px;
+  padding: 25px;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  color: black;
   font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 47px;
-  color: #000000;
 }
 
 .card {
-  position: absolute;
+  position: relative;
   width: 300px;
   height: 529px;
-  left: 32px;
-  top: 292px;
-}
-
-.card-header {
-  width: 300px;
-  height: 194px;
-  left: 32px;
-  top: 292px;
-}
-
-.card-body {
-  width: 300px;
-  height: 336px;
-  left: 32px;
-  top: 485px;
-  background: #f3f3f3;
+  /* padding: 5px; */
+  border-radius: 5% 5% 0 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f3f3f3;
 }
 
-.card-img {
+.img-background {
+  width: 100%;
+}
+
+.img-icon {
   position: absolute;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
   left: 90px;
-  top: 128px;
-}
-
-.card-img-heroe {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  bottom: 282px;
   border-radius: 50%;
 }
 
-.card-title {
+.like {
   position: absolute;
-  width: auto;
-  height: 32px;
-  left: 89px;
-  top: 260px;
-}
-
-.card-title-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 35px;
-  display: flex;
-  align-items: flex-end;
-  text-align: center;
-  color: #000000;
-}
-
-.card-text {
-  position: relative;
-  width: 267px;
-  height: 113px;
-  left: 16px;
-  top: 118px;
-}
-
-.card-text-history {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-
-  color: #333333;
-}
-
-.card-btn {
-  position: absolute;
-  width: 128.78px;
-  height: 48.52px;
-  left: 85px;
-  bottom: 19px;
-  background: #00669f;
-  text-align: center;
-  padding: 14px;
-  box-sizing: border-box;
-}
-
-.card-btn-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  color: #f3f3f3;
-}
-
-.frame {
-  position: absolute;
-  width: 30px;
-  height: 30px;
+  top: 16px;
   left: 21px;
-  top: 15.88px;
-}
-.img {
-  border-radius: 16px 16px 0px 0px;
+  z-index: 1;
 }
 
-.footer-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #fff9f9;
+.footer-background {
+  padding: 10px;
+  background-color: #00669f;
+  color: white;
 }
 
-.harly {
-  margin-left: 20%;
+@media (max-width: 768px) {
+  header,
+  footer,
+  body {
+    width: 84.9vh;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
-.batman {
-  margin-left: 40%;
+@media (max-width: 425px) {
+  header,
+  footer,
+  body {
+    width: 47vh;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
