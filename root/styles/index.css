@@ -1,20 +1,25 @@
-* {
+body {
+  padding: 0px;
   margin: 0px;
+  width: 100%;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.top {
-  width: 1024px;
-  height: 20px;
-  left: calc(50% - 1024px / 2);
-  top: 0px;
-  background: #222222;
-  color: white;
+header {
+  background: #f0a83e;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  height: 54px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
+  justify-content: space-around;
+}
+.top {
+  display: none;
+}
+
+.header-nav {
+  display: none;
+}
+
+.img-principal {
+  width: 100%;
 }
