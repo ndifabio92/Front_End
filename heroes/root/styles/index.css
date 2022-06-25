@@ -94,7 +94,7 @@ button {
   header,
   footer,
   body {
-    width: 84.9vh;
+    width: 100vw;
   }
 
   main {
@@ -109,7 +109,7 @@ button {
   header,
   footer,
   body {
-    width: 47vh;
+    width: 100vw;
   }
 
   main {
