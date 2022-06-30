@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +7,23 @@
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  width: 100vw;
-  height: 70px;
   align-items: center;
+  margin: 50px 30px;
 }
 
 body {
   background-image: url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
-  background-position: left 60px top -155px;
-  background-size: 120%;
+  background-position: left 60px top -80px;
+  background-size: 450px;
 }
 main {
   width: 100vw;
@@ -77,6 +82,30 @@ h3 {
   margin-bottom: 21px;
 }
 
+#comment-isvisible {
+  display: none;
+}
+
+.header-nav {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 25px;
+}
+
+.header-btn {
+  display: none;
+}
+
+.ismobile {
+  width: 100vw;
+}
+
+.isdesktop {
+  display: none;
+}
+
 .logo {
   width: 125px;
   height: 24px;
@@ -116,9 +145,9 @@ h3 {
   cursor: pointer;
 }
 
-.footer-btn:active,
-.btn:active,
-.bottom-btn:active {
+.footer-btn:hover,
+.btn:hover,
+.bottom-btn:hover {
   background-color: #fdd7cd;
 }
 
@@ -278,4 +307,130 @@ h3 {
 .white {
   filter: invert(99%) sepia(91%) saturate(122%) hue-rotate(196deg)
     brightness(119%) contrast(96%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #comment-isvisible {
+    display: block;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .header-nav a {
+    margin: 10px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 176.1%;
+    color: #242e52;
+  }
+
+  .header-btn {
+    display: inline;
+  }
+
+  .btn-less-margin {
+    margin-top: 0px !important;
+  }
+
+  .main-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 110px;
+  }
+
+  .isdesktop {
+    display: inline;
+    width: 580px;
+    height: 525px;
+  }
+
+  .ismobile {
+    display: none;
+  }
+
+  .main-section {
+    text-align: start;
+    width: 480px;
+    height: 386px;
+  }
+
+  .article-firstcolum {
+    text-align: start;
+    width: 480px;
+  }
+
+  .main-mid {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .article-section {
+    width: 553px;
+  }
+
+  .article-title {
+    color: black;
+    width: 100%;
+    background-color: white;
+  }
+
+  .comments {
+    margin-bottom: 180px;
+  }
+
+  .comments-rows {
+    display: flex;
+    margin-top: 74px;
+  }
+
+  .comments .btn {
+    margin-top: 0px;
+  }
+
+  .comment {
+    padding: 30px;
+  }
+
+  .avatar {
+    bottom: 65px;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .bottom {
+    height: 224px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .bottom-title {
+    width: 510px;
+    text-align: start;
+  }
+
+  .header-nav-a:hover {
+    cursor: pointer;
+    color: #808080;
+  }
 }
