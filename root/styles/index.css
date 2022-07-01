@@ -329,6 +329,7 @@ h3 {
   footer {
     height: 274px;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
   }
 
   #comment-isvisible {
@@ -462,5 +463,18 @@ h3 {
   .copy-desk {
     display: inline;
     text-align: center;
+  }
+
+  .footer-social,
+  .form,
+  .copy-desk {
+    width: auto;
+  }
+
+  .footer-nav {
+    width: 50%;
+  }
+  .footer-input {
+    width: 201px;
   }
 }
