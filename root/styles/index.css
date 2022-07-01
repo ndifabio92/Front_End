@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
 }
@@ -63,7 +63,7 @@ section {
   padding: 20px;
 }
 
-section > img:hover {
+.icon-hover:hover {
   filter: invert(46%) sepia(51%) saturate(3125%) hue-rotate(340deg)
     brightness(102%) contrast(91%);
   cursor: pointer;
@@ -86,7 +86,9 @@ h3 {
   display: none;
 }
 
-.header-nav {
+.header-nav,
+.header-btn,
+.isdesktop {
   display: none;
 }
 
@@ -94,16 +96,8 @@ h3 {
   font-size: 25px;
 }
 
-.header-btn {
-  display: none;
-}
-
 .ismobile {
   width: 100vw;
-}
-
-.isdesktop {
-  display: none;
 }
 
 .logo {
@@ -239,12 +233,10 @@ h3 {
 }
 
 .bottom-title {
-  font-family: "Be Vietnam";
   font-style: normal;
   font-weight: 400;
   font-size: 54px;
   line-height: 48px;
-
   letter-spacing: -0.005em;
   color: #ffffff;
 }
@@ -299,6 +291,17 @@ h3 {
 
 .footer-social {
   width: 100vw;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.icons-social {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -307,6 +310,9 @@ h3 {
 .white {
   filter: invert(99%) sepia(91%) saturate(122%) hue-rotate(196deg)
     brightness(119%) contrast(96%);
+}
+.copy-desk {
+  display: none;
 }
 
 @media (min-width: 1440px) {
@@ -320,10 +326,17 @@ h3 {
     align-items: center;
   }
 
+  footer {
+    height: 274px;
+    flex-direction: row-reverse;
+  }
+
   #comment-isvisible {
     display: block;
   }
 
+  .ismobile,
+  .slider,
   .burger {
     display: none;
   }
@@ -361,10 +374,6 @@ h3 {
     display: inline;
     width: 580px;
     height: 525px;
-  }
-
-  .ismobile {
-    display: none;
   }
 
   .main-section {
@@ -414,10 +423,6 @@ h3 {
     bottom: 65px;
   }
 
-  .slider {
-    display: none;
-  }
-
   .bottom {
     height: 224px;
     flex-direction: row;
@@ -432,5 +437,30 @@ h3 {
   .header-nav-a:hover {
     cursor: pointer;
     color: #808080;
+  }
+
+  .footer-social {
+    flex-direction: column-reverse;
+    height: 200px;
+  }
+
+  .icons-social {
+    gap: 10px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    height: 200px;
+  }
+
+  .copy-mobile {
+    display: none;
+  }
+
+  .copy-desk {
+    display: inline;
+    text-align: center;
   }
 }
